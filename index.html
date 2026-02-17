@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Challenges Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX'); // <-- PASTE YOUR MEASUREMENT ID HERE
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+
+        .topic-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .topic-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Rainbow Background Colors */
+        #sequence { background-color: #EF4444; }
+        #selection { background-color: #F97316; }
+        #iteration { background-color: #EAB308; }
+        #data-structures { background-color: #22C55E; }
+        #string-manipulation { background-color: #14B8A6; }
+        #file-handling { background-color: #3B82F6; }
+        #subprograms { background-color: #8B5CF6; }
+        #exam-questions { background-color: #6366F1; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-900">Computer Science Challenges</h1>
+            <p class="text-sm text-gray-600 mt-2">Select a topic to begin practicing.</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <a href="challenges.html?topic=sequence" class="topic-card rounded-lg p-6 flex flex-col text-white" id="sequence">
+                <h2 class="text-lg font-bold border-b-2 border-white/50 pb-2 mb-3">Sequence</h2>
+                <p class="text-white/80 text-xs flex-grow">Challenges based on executing statements in order.</p>
+            </a>
+            <a href="challenges.html?topic=selection" class="topic-card rounded-lg p-6 flex flex-col text-white" id="selection">
+                <h2 class="text-lg font-bold border-b-2 border-white/50 pb-2 mb-3">Selection</h2>
+                <p class="text-white/80 text-xs flex-grow">Using if, else, and switch to control program flow.</p>
+            </a>
+            <a href="challenges.html?topic=iteration" class="topic-card rounded-lg p-6 flex flex-col text-white" id="iteration">
+                <h2 class="text-lg font-bold border-b-2 border-white/50 pb-2 mb-3">Iteration</h2>
+                <p class="text-white/80 text-xs flex-grow">Challenges involving loops (for, while).</p>
+            </a>
+            <a href="challenges.html?topic=data-structures" class="topic-card rounded-lg p-6 flex flex-col text-white" id="data-structures">
+                <h2 class="text-lg font-bold border-b-2 border-white/50 pb-2 mb-3">Data Structures</h2>
+                <p class="text-white/80 text-xs flex-grow">Working with 1D and 2D arrays.</p>
+            </a>
+            <a href="challenges.html?topic=string-manipulation" class="topic-card rounded-lg p-6 flex flex-col text-white" id="string-manipulation">
+                <h2 class="text-lg font-bold border-b-2 border-white/50 pb-2 mb-3">String Manipulation</h2>
+                <p class="text-white/80 text-xs flex-grow">Working with text, substrings, and concatenation.</p>
+            </a>
+            <a href="challenges.html?topic=file-handling" class="topic-card rounded-lg p-6 flex flex-col text-white" id="file-handling">
+                <h2 class="text-lg font-bold border-b-2 border-white/50 pb-2 mb-3">File Handling</h2>
+                <p class="text-white/80 text-xs flex-grow">Reading from and writing to external files.</p>
+            </a>
+            <a href="challenges.html?topic=subprograms" class="topic-card rounded-lg p-6 flex flex-col text-white" id="subprograms">
+                <h2 class="text-lg font-bold border-b-2 border-white/50 pb-2 mb-3">Subprograms</h2>
+                <p class="text-white/80 text-xs flex-grow">Creating and using functions and procedures.</p>
+            </a>
+            <a href="challenges.html?topic=exam-questions" class="topic-card rounded-lg p-6 flex flex-col text-white" id="exam-questions">
+                <h2 class="text-lg font-bold border-b-2 border-white/50 pb-2 mb-3">Exam Questions</h2>
+                <p class="text-white/80 text-xs flex-grow">Practice questions in a typical exam style.</p>
+            </a>
+        </main>
+
+        <div class="text-center mt-12">
+            <a href="admin.html" class="inline-block bg-white hover:bg-gray-100 text-gray-800 font-semibold py-3 px-6 border border-gray-300 rounded-lg shadow-sm transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+                Add a Challenge
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
